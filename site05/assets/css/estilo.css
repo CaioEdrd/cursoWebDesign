@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    font-family: 'Vollkorn', serif;
+}
+
+.hero{
+    color: #3d537c;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 210px 336px ;
+}
+
+h1{
+    font-size: 150px;
+    margin: 32px;
+    font-family: 'Suez One';
+}
+
+p{
+    font-size: 30px;
+    margin: 0;
+}
