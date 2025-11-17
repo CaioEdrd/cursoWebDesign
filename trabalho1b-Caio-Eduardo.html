@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec Blog - O Seu Blog de Tecnologia by Caio Eduardo</title>
+    <style>
+
+        /*Formatação geral*/
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+            font-size: 18px;
+            background-color: #e6e6e6;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a{
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /*Formatação TOP*/
+        .cabecalho{
+            padding: 15px;
+            background-color: #FFBE03;
+            margin: 0px;
+            
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0px;
+        }
+        .cabecalho .subtitulo{
+            text-align: center;
+            color: #5a5a5a;
+            margin: 0;
+        }
+        .menu{
+            text-align: center;
+            margin: 0;
+        }
+        ul{
+            margin-top: 5px;
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+            padding: 8px;
+        }
+        .tec{
+            color: #5a5a5a;
+        }
+        .blog{
+            color: #FFFF;
+        }
+
+        .cabecalho a:link, .cabecalho a:visited{
+            color: #FFFF;
+        }
+        .cabecalho a:hover{
+            color: #FFBE03;
+            background-color: #FFFF;
+        }
+
+        /*Formatação corpo*/
+        .container{
+            width: 920px;
+            margin: 8px auto;
+            padding: 15px;
+        }
+
+        
+        /*Formatação area recentes*/
+        .area-recentes{
+            margin-bottom: 15px;
+            background-color: #FFFF;
+        }
+
+        .post-recentes{
+            padding: 6px;
+            margin: 0 5px;
+
+        }
+        
+        .post-recentes-ultimo{
+            border-top: 1px solid #565656;
+            padding: 6px;
+            margin: 0 5px;
+        }
+
+        .titulo-recentes{
+            font-size: 1.5em;
+            background-color: #cccc;
+            color: #565656;
+            margin: 0px;
+            line-height: 50px;
+            padding-left: 8px;
+        }
+        .texto-recentes{
+            margin: 0px;
+        }
+
+        /*Formatação post*/
+        .area-post{
+            width: 100%;
+        }
+
+        .post{
+            padding: 10px 20px;
+            background-color: #FFFF;
+            margin-bottom: 20px;
+        }
+
+        .titulo-post{
+            margin: 0px;
+            color: #FFBE03;
+            font-size: 1.5em;
+        }
+        .data-post{
+            margin-top: 0px;
+        }
+        .texto-post{
+            margin: 0px;
+        }
+        .link-post{
+    
+            padding:0px;
+        }
+        .link-post:link, .link-post:visited{
+            color: #FFBE03;
+        } 
+        .link-post:hover{
+            text-decoration: underline;
+        }
+
+        /*Formatação comentarios*/
+        .area-comentarios{
+            padding: 10px 20px;
+            background-color: #FFFF;
+            margin-bottom: 20px;
+        }
+        
+        .area-comentarios table .usuario{
+            text-align: center;
+        }
+        .area-comentarios table .comentario{
+            padding-left: 55px;
+            text-align: justify;
+        }
+
+        .area-comentarios h4{
+            margin: 5px;
+        }
+
+        /*Formatação rodape*/
+
+        #rodape{
+            background-color: #a1a0a0;
+            text-align: center;
+            padding: 10px;
+            margin: 0px auto;
+            clear: both;
+        }
+
+        #rodape p{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo"><span class="tec">Tec</span><span class="blog">Blog</span></h1>
+        <h4 class="subtitulo">O seu blog de tecnologia</h4>
+        <nav class="menu">
+            <ul>
+                <li><a href="" >Home</a></li>
+                <li><a href=""  >Jogos</a></li>
+                <li><a href=""  >Celulares</a></li>
+                <li><a href=""  >Informática</a></li>
+                <li><a href=""  >Eletrônicos</a></li>
+            </ul>
+        </nav>
+    </header> <!--Fim cabeçalho-->
+
+    <main class="container">
+
+        <section class="area-recentes">
+            <h1 class="titulo-recentes">Postagens Recentes</h1>
+
+            <article class="post-recentes">
+                <p class="texto-recentes"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="link-post">Leia mais</a>
+            </article> 
+            <article class="post-recentes-ultimo">
+                <p class="texto-recentes"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="link-post">Leia mais</a>
+            </article>
+        </section>
+
+        <section class="area-post">
+            <article class="post">
+            
+                <h1 class="titulo-post">Titulo da postagem 1</h1>
+                <p class="data-post">postado 16 de novembro de 2025</p>
+                <img width="620px" src="imagens/imagem1.jpg" alt="img-post" class="img-post">
+                <p class="texto-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula</p>
+                <a href="" class="link-post">Leia mais</a>
+
+            </article>
+
+            <article class="post">
+            
+                <h1 class="titulo-post">Titulo da postagem 2</h1>
+                <p class="data-post">postado 16 de novembro de 2025</p>
+                <img width="620px" src="imagens/imagem2.jpg" alt="img-post" class="img-post">
+                <p class="texto-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula</p>
+                <a href="" class="link-post">Leia mais</a>
+
+            </article>
+        </section>       
+
+        <section class="area-comentarios">
+            <h2 class="titulo-post">Comentários</h2>
+            <table>
+                <tr>
+                    <th class="usuario">Nome</th>
+                    <th class="comentario">Comentário</th>
+                </tr>
+                <tr>
+                    <td class="usuario">João Gomes</td>
+                    <td class="comentario">Blog muito bom!</td>
+                </tr>
+                <tr>
+                    <td class="usuario">Paulo Silva</td>
+                    <td class="comentario">Saber de tecnologia é com esse blog...</td>
+                </tr>
+                <tr>
+                    <td class="usuario">Maurício da Costa</td>
+                    <td class="comentario">Tecnologia é vida e com esse blog é fácil se atualizar sobre tudo.</td>
+                </tr>
+            </table>
+
+            <h4>Envie seu comentario</h3>
+            <article class="enviar-comentario">
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td><label for="nome">Nome Completo</label></td>
+                            <td><input type="text" name="nome" id="nome" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-mail</label></td>
+                            <td><input type="email" name="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comentario">Comentário</label></td>
+                            <td><textarea name="comentario" id="comentario"></textarea></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Enviar comentário</button>
+                </form>
+            </article>
+        </section>
+    </main>    
+
+    <footer id="rodape">
+        <p>Todos os direitos reservados <br>Caio Eduardo, 2025</p>
+    </footer>
+   </body>
+
+</html>
