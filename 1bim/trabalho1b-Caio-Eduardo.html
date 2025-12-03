@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec Blog - O Seu Blog de Tecnologia by Caio Eduardo</title>
+    <style>
+
+        /*Formatação geral*/
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;   
+            font-size: 18px;
+            background-color: #e6e6e6; /* coloquei uma escala de branco mais puxado para o cinza para que contraste com os demais elementos que estarão na página */
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a{
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /*Formatação TOP*/
+        .cabecalho{
+            padding: 15px;
+            background-color: #FFBE03; /* Utilizei essa cor para o background para ser algo mais chamativo para a página */
+            margin: 0px;
+            
+        }
+
+        .titulo{
+            text-align: center; /* Alinhei ao centro da página inspirando-se em outras páginas */
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0px;
+        }
+        .cabecalho .subtitulo{
+            text-align: center; 
+            color: #5a5a5a; /* Utilizei escalas de cinza em certas partes para contrastar com o amarelo e manter uma harmonia */
+            margin: 0;
+        }
+        .menu{
+            text-align: center; /* O menu mantendo o alinhamento com o título da página para seguir o fluxo visual */
+            margin: 0;
+        }
+        ul{
+            margin-top: 5px;
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+            padding: 8px;
+        }
+        .tec{
+            color: #5a5a5a; /* O nome do título utilizei duas colorações para dar um destaque, cinza em uma parte e branco em outra */
+        }
+        .blog{
+            color: #FFFF; 
+        }
+
+        .cabecalho a:link, .cabecalho a:visited{
+            color: #FFFF; /* Utilizei dessa propriedade para destacar o link do menu */
+        }
+        .cabecalho a:hover{
+            color: #FFBE03; /* Essa propriedade serviu para configurar o visual do link ao ter o mouse sobre ele */
+            background-color: #FFFF;
+        }
+
+        /*Formatação corpo*/
+        .container{
+            width: 920px; /* Limitei a largura do corpo da página para focar a visão do leitor no centro da página */
+            margin: 8px auto; /* Centralizei o container de informações */
+            padding: 15px;
+        }
+
+        
+        /*Formatação area recentes*/
+        .area-recentes{
+            margin-bottom: 15px;
+            background-color: #FFFF; /* Utilizei o branco para destacar do background da página */
+        }
+
+        .post-recentes{
+            padding: 6px;
+            margin: 0 5px;
+
+        }
+        
+        .post-recentes-ultimo{
+            border-top: 1px solid #565656; /* Esse border é apenas para separa o último post recente do acima dele e estabelecer a fronteira entre eles*/
+            padding: 6px;
+            margin: 0 5px;
+        }
+
+        .titulo-recentes{
+            font-size: 1.5em;
+            background-color: #cccc; /* Utilizei de um cinza mais escuro visando o destaque */
+            color: #565656; /* Mantive o texto na escala de cinza */
+            margin: 0px;
+            line-height: 50px;
+            padding-left: 8px;
+        }
+        .texto-recentes{
+            margin: 0px;
+            text-align: justify; /* Justifiquei o texto do post */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*Formatação post*/
+        .area-post{
+            width: 100%; /* O post preenche 100% do container das informações */
+        }
+
+        .post{
+            padding: 10px 20px;
+            background-color: #FFFF; /* Destaque do background da página */
+            margin-bottom: 20px; /* Utilizei para deixar uma clara separação de um post para outro */
+        }
+
+        .titulo-post{
+            margin: 0px;
+            color: #FFBE03; /* Titulo com essa cor para dar mais destaque */
+            font-size: 1.5em;
+        }
+        .data-post{
+            margin-top: 0px;
+        }
+        .texto-post{
+            margin: 0px;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif; /* Textos com fonte diferente dos títulos */
+        }
+        .link-post{
+    
+            padding:0px;
+        }
+        .link-post:link, .link-post:visited{
+            color: #FFBE03; /* Link da opção de ler mais sobre a matéria com uma coloração chamativa e distinta do texto do post */
+        } 
+        .link-post:hover{
+            text-decoration: underline; /* Ao ser colocado o mouse sobre o link, irá destacar com um underline */
+        } 
+
+        /*Formatação comentarios*/
+        .area-comentarios{
+            padding: 10px 20px;
+            background-color: #FFFF; /* Destacar do background da página */
+            margin-bottom: 20px;
+        }
+        
+        .area-comentarios table .usuario{
+            text-align: center;
+        }
+        .area-comentarios table .comentario{
+            padding-left: 55px; /* Dei esse espaçamento para que os textos dos comentários ficassem mais distantes dos nomes dos usuários */
+            text-align: justify;
+        }
+
+        .area-comentarios h4{
+            margin: 5px;
+        }
+
+        /*Formatação rodape*/
+
+        #rodape{
+            background-color: #a1a0a0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #rodape p{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo"><span class="tec">Tec</span><span class="blog">Blog</span></h1> <!--Utilizei os spans para separar partes do título e conseguir estilizar elas-->
+        <h4 class="subtitulo">O seu blog de tecnologia</h4>
+        <nav class="menu"> <!--Menu de navegação com uma lista de links-->
+            <ul>
+                <li><a href="" >Home</a></li>
+                <li><a href=""  >Jogos</a></li>
+                <li><a href=""  >Celulares</a></li>
+                <li><a href=""  >Informática</a></li>
+                <li><a href=""  >Eletrônicos</a></li>
+            </ul>
+        </nav>
+    </header> <!--Fim cabeçalho-->
+
+    <main class="container"> <!--Container com as postagens-->
+
+        <section class="area-recentes"> <!--Seção de posts recentes para dar destaque-->
+            <h1 class="titulo-recentes">Postagens Recentes</h1>
+
+            <article class="post-recentes"> <!--Post recente com o título, texto e link para ler mais-->
+                <h1 class="titulo-post">SSDs a partir de R$80 na Black das Black do Magazine Luiza</h1>
+                <p class="texto-recentes">Seja para uso interno ou externo, Magalu tem várias opções de SSDs em promoção, incluindo opções de marcas como Kingston, SanDisk, Adata e muitas outras a preços mais baixos por tempo limitado; confira as oportunidades</p>
+                <a href="" class="link-post">Leia mais</a>
+            </article> 
+            <article class="post-recentes-ultimo"> <!--Há diferenciação de classe pois o último tem uma bordar superior para separar do acima dele, mas a estrutura é a mesma-->
+                <h1 class="titulo-post">Samsung confirma algumas das melhorias da linha Galaxy S26</h1>
+                <p class="texto-recentes">A fabricante sul-coreana Samsung revelou oficialmente alguns dos elementos que serão aprimorados na geração Galaxy S26 de smartphones. Quem apresentou uma prévia dos recursos foi Daniel Araujo, vice-presidente da Divisão de Experiência Móvel da companhia.</p>
+                <a href="" class="link-post">Leia mais</a>
+            </article>
+        </section>
+
+        <section class="area-post"> <!--Seção das postagens gerais do blog-->
+            <article class="post"> <!--Cada post consta um titulo, data, imagem, texto e link para ler mais-->
+            
+                <h1 class="titulo-post">A história do Game Boy, a lendária linha de portáteis da Nintendo</h1>
+                <p class="data-post">postado 16 de novembro de 2025</p>
+                <img width="620px" src="https://tm.ibxk.com.br/2025/11/17/game_boy_nintendo_portatil_76413e5eb4.jpg?ims=1280x605/filters:quality(80)" alt="Imagem Game Boy" class="img-post">
+                <p class="texto-post">A Nintendo teve ao longo da história uma linha de aparelhos que revolucionou o mercado de games mais até do que os seus consoles mais famosos. É o Game Boy, o portátil que teve uma série de gerações, mas foi importante para a indústria desde a primeira geração.</p>
+                <p class="texto-post">Ele não foi o primeiro portátil da história para jogos, mas com certeza é o mais popular comercialmente e também o mais influente. A seguir, conheça a história, curiosidades e o que fez com que essa tecnologia fosse lembrada até hoje e mesmo por quem não viveu esse período.</p>
+                <a href="" class="link-post">Leia mais</a>
+
+            </article>
+
+            <article class="post">
+            
+                <h1 class="titulo-post">Site que vendia deepfakes de abuso infantil é derrubado após ação da AGU</h1>
+                <p class="data-post">postado 16 de novembro de 2025</p>
+                <img width="620px" src="https://tm.ibxk.com.br/2025/11/17/agu_derruba_site_de_deepfake_4c2225e10c.jpg?ims=1280x605/filters:quality(80)" alt="Imagem Ilustrativa post 2" class="img-post">
+                <p class="texto-post">Um site estrangeiro que comercializava deepfakes destinadas à produção de conteúdos de pornografia infantil saiu do ar após notificação extrajudicial da Procuradoria Nacional da União de Defesa da Democracia (PNDD). Detalhes da ação foram divulgados pela Advocacia-Geral da União (AGU) na última sexta-feira (14).</p>
+                <p class="texto-post">O pedido da Secretaria de Comunicação da Presidência da República (Secom) para a derrubada da página foi baseado em uma reportagem da agência Núcleo, que denunciou o uso de ferramentas de inteligência artificial de código aberto para a geração das imagens ilícitas envolvendo menores. A operação era realizada por meio da dark web</p>
+                <a href="" class="link-post">Leia mais</a>
+
+            </article>
+        </section>       
+
+        <section class="area-comentarios"> <!--Seção de comentários-->
+            <h2 class="titulo-post">Comentários</h2>
+            <table> <!--Tabela para armazenar os comentários já postados no blog-->
+                <tr>
+                    <th class="usuario">Nome</th>
+                    <th class="comentario">Comentário</th>
+                </tr>
+                <tr>
+                    <td class="usuario">João Gomes</td>
+                    <td class="comentario">Blog muito bom!</td>
+                </tr>
+                <tr>
+                    <td class="usuario">Paulo Silva</td>
+                    <td class="comentario">Saber de tecnologia é com esse blog...</td>
+                </tr>
+                <tr>
+                    <td class="usuario">Maurício da Costa</td>
+                    <td class="comentario">Tecnologia é vida e com esse blog é fácil se atualizar sobre tudo.</td>
+                </tr>
+            </table>
+
+            <h4>Envie seu comentario</h3>
+            <article class="enviar-comentario">
+                <form action="#"> <!--Formulário dentro de uma tabela para que um usuário possa enviar seu comentário-->
+                    <table>
+                        <tr>
+                            <td><label for="nome">Nome Completo</label></td>
+                            <td><input type="text" name="nome" id="nome" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-mail</label></td>
+                            <td><input type="email" name="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comentario">Comentário</label></td>
+                            <td><textarea name="comentario" id="comentario"></textarea></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Enviar comentário</button>
+                </form>
+            </article>
+        </section>
+    </main>    
+
+    <footer id="rodape"> <!--Rodapé com autor e data-->
+        <p>Todos os direitos reservados <br>Caio Eduardo, 2025</p>
+    </footer>
+   </body>
+<!--
+Criei essa página para reproduzir um blog com foco em informações sobre tecnologia, o blog tem notícias diversas sobre o mundo da tecnologia. Para sua criação, me inspirei em blogs que acesso quase que diariamente, mas trouxe uma identidade visual e elementos próprios. 
+
+Muitos blogs de tecnologia são vagos e outros muito técnicos, o TecnoBlog traz informações que vão desde valor de hardwares a assuntos relacionados a segurança da informação. 
+
+Tentei trazer uma identidade visual chamativa, mas harmônica unindo a cor amarela com tons de cinza e branco
+
+Criei uma página com o título, um menu de navegação, posts recentes, as postagens em geral e uma seção para comentários dos usuários, levando em consideração os elementos necessários para um blog, o TecnoBlog está completo.
+
+Não preenchi a largura completa para tentar uma identidade que puxe a visão do leitor para o centro da página seguindo um fluxo de leitura
+-->
+</html>

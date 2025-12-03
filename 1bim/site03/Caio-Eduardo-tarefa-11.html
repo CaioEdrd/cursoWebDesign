@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11 Caio Eduardo</title>
+</head>
+<body>
+    <h1>Cadastro de interesse em oficina da SECITEX</h1>
+    <p>Preencha o formulário de interesse e aguarde a validação em seu e-mail</p>
+
+    <form action="#">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome Completo"> <br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu E-mail"> <br>
+
+        <label for="oficina">Selecione sua oficina de interesse:</label><br>
+        <input type="radio" name="oficina">Oficina de HTML <br>
+        <input type="radio" name="oficina">Oficina de Robótica <br>
+        <input type="radio" name="oficina">Oficina de Python <br>
+
+        Outros interesses: <br>
+        <input type="checkbox"> Oficina de Banco de Dados <br>
+        <input type="checkbox"> Oficina de CSS <br>
+        <input type="checkbox"> Oficina de Arduino <br>
+
+        <label for="comentario">Comentário</label>
+        <textarea name="comentario" id="comentario"></textarea> <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
