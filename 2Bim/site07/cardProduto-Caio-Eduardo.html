@@ -6,7 +6,9 @@
     <title>Produto</title>
 
     <style>
-    
+        body{
+            background-color: #969696;
+        }
         .card { 
                 width: 300px; 
                 display: inline-block; 
@@ -14,7 +16,16 @@
                 border-radius: 8px; 
                 overflow: hidden; /* Corta a imagem nas bordas */ 
                 position: relative; /* Pai Âncora */ 
-            }
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: justify;
+                position: relative;
+                border-radius: 8px;
+        }
+
+        .card:hover{
+            position: absolute;
+            top: 2%;
+        }
 
         .card-img { 
             width: 100%; 
@@ -31,18 +42,58 @@
             font-size: 0.75rem; 
             border-radius: 4px; }
         
-        .card h1, p{
-            margin: 0
+        .card-titulo{
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 1.2rem;
         }
+
+        .card-descricao{
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-right: 5px;
+            font-size: 0.8rem;
+            color: #5e5e5e;
+        }
+
+        .card-precoAntigo{
+            text-decoration: line-through;
+            color: #5e5e5e;
+            font-size: 0.8rem;
+            margin: 0;
+            margin-left: 5px;
+
+        }
+        .card-precoNovo{
+            color: #26a7fd;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .card-botao{
+            text-decoration: none;
+            color: #ffff;
+            background-color: #000;
+            display: inline-block;
+            padding: 5px 10px;
+            position: absolute;
+            left: 70%;
+            bottom: 8%;
+            font-size: 0.9rem;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 <body>
     <div class="card">
-        <span class="badge">Promoção 35% OFF</span>
-        <img class="card-img" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/83e8a50f81c044e69c9d3274af19fb2d_9366/Mochila_Classic_3_Bar_Logo_Preto_JI6953_01_00_standard.jpg" alt="Mochila"  >
-        <h1>Mochila adidas</h1>
-        <p>Aonde quer que o seu dia te leve, esta mochila adidas mantém você preparado</p>
-        
+        <span class="badge">- 35% OFF</span>
+        <img class="card-img" src="https://imgnike-a.akamaihd.net/360x360/027983IDA2.jpg" alt="Tenis"  >
+        <h1 class="card-titulo">Nike Downshifter 13</h1>
+        <p class="card-descricao">O Downshifter 13 está pronto para o passeio ou corrida.</p>
+        <p class="card-precoAntigo">R$ 850</p>
+        <p class="card-precoNovo">R$ 552</p>
+        <a href="#" class="card-botao">Comprar</a>
     </div>
 </body>
 </html>
