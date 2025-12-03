@@ -8,9 +8,9 @@
 
         /*Formatação geral*/
         body{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+            font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;   
             font-size: 18px;
-            background-color: #e6e6e6;
+            background-color: #e6e6e6; /* coloquei uma escala de branco mais puxado para o cinza para que contraste com os demais elementos que estarão na página */
             padding: 0px;
             margin: 0px;
         }
@@ -23,24 +23,24 @@
         /*Formatação TOP*/
         .cabecalho{
             padding: 15px;
-            background-color: #FFBE03;
+            background-color: #FFBE03; /* Utilizei essa cor para o background para ser algo mais chamativo para a página */
             margin: 0px;
             
         }
 
         .titulo{
-            text-align: center;
+            text-align: center; /* Alinhei ao centro da página inspirando-se em outras páginas */
             font-size: 3em;
             font-weight: bold;
             margin: 0px;
         }
         .cabecalho .subtitulo{
-            text-align: center;
-            color: #5a5a5a;
+            text-align: center; 
+            color: #5a5a5a; /* Utilizei escalas de cinza em certas partes para contrastar com o amarelo e manter uma harmonia */
             margin: 0;
         }
         .menu{
-            text-align: center;
+            text-align: center; /* O menu mantendo o alinhamento com o título da página para seguir o fluxo visual */
             margin: 0;
         }
         ul{
@@ -52,24 +52,24 @@
             padding: 8px;
         }
         .tec{
-            color: #5a5a5a;
+            color: #5a5a5a; /* O nome do título utilizei duas colorações para dar um destaque, cinza em uma parte e branco em outra */
         }
         .blog{
-            color: #FFFF;
+            color: #FFFF; 
         }
 
         .cabecalho a:link, .cabecalho a:visited{
-            color: #FFFF;
+            color: #FFFF; /* Utilizei dessa propriedade para destacar o link do menu */
         }
         .cabecalho a:hover{
-            color: #FFBE03;
+            color: #FFBE03; /* Essa propriedade serviu para configurar o visual do link ao ter o mouse sobre ele */
             background-color: #FFFF;
         }
 
         /*Formatação corpo*/
         .container{
-            width: 920px;
-            margin: 8px auto;
+            width: 920px; /* Limitei a largura do corpo da página para focar a visão do leitor no centro da página */
+            margin: 8px auto; /* Centralizei o container de informações */
             padding: 15px;
         }
 
@@ -77,7 +77,7 @@
         /*Formatação area recentes*/
         .area-recentes{
             margin-bottom: 15px;
-            background-color: #FFFF;
+            background-color: #FFFF; /* Utilizei o branco para destacar do background da página */
         }
 
         .post-recentes{
@@ -87,38 +87,39 @@
         }
         
         .post-recentes-ultimo{
-            border-top: 1px solid #565656;
+            border-top: 1px solid #565656; /* Esse border é apenas para separa o último post recente do acima dele e estabelecer a fronteira entre eles*/
             padding: 6px;
             margin: 0 5px;
         }
 
         .titulo-recentes{
             font-size: 1.5em;
-            background-color: #cccc;
-            color: #565656;
+            background-color: #cccc; /* Utilizei de um cinza mais escuro visando o destaque */
+            color: #565656; /* Mantive o texto na escala de cinza */
             margin: 0px;
             line-height: 50px;
             padding-left: 8px;
         }
         .texto-recentes{
             margin: 0px;
-            text-align: justify;
+            text-align: justify; /* Justifiquei o texto do post */
+            font-family: 'Times New Roman', Times, serif;
         }
 
         /*Formatação post*/
         .area-post{
-            width: 100%;
+            width: 100%; /* O post preenche 100% do container das informações */
         }
 
         .post{
             padding: 10px 20px;
-            background-color: #FFFF;
-            margin-bottom: 20px;
+            background-color: #FFFF; /* Destaque do background da página */
+            margin-bottom: 20px; /* Utilizei para deixar uma clara separação de um post para outro */
         }
 
         .titulo-post{
             margin: 0px;
-            color: #FFBE03;
+            color: #FFBE03; /* Titulo com essa cor para dar mais destaque */
             font-size: 1.5em;
         }
         .data-post{
@@ -127,22 +128,23 @@
         .texto-post{
             margin: 0px;
             text-align: justify;
+            font-family: 'Times New Roman', Times, serif; /* Textos com fonte diferente dos títulos */
         }
         .link-post{
     
             padding:0px;
         }
         .link-post:link, .link-post:visited{
-            color: #FFBE03;
+            color: #FFBE03; /* Link da opção de ler mais sobre a matéria com uma coloração chamativa e distinta do texto do post */
         } 
         .link-post:hover{
-            text-decoration: underline;
-        }
+            text-decoration: underline; /* Ao ser colocado o mouse sobre o link, irá destacar com um underline */
+        } 
 
         /*Formatação comentarios*/
         .area-comentarios{
             padding: 10px 20px;
-            background-color: #FFFF;
+            background-color: #FFFF; /* Destacar do background da página */
             margin-bottom: 20px;
         }
         
@@ -150,7 +152,7 @@
             text-align: center;
         }
         .area-comentarios table .comentario{
-            padding-left: 55px;
+            padding-left: 55px; /* Dei esse espaçamento para que os textos dos comentários ficassem mais distantes dos nomes dos usuários */
             text-align: justify;
         }
 
@@ -164,8 +166,6 @@
             background-color: #a1a0a0;
             text-align: center;
             padding: 10px;
-            margin: 0px auto;
-            clear: both;
         }
 
         #rodape p{
@@ -176,9 +176,9 @@
 
 <body>
     <header class="cabecalho">
-        <h1 class="titulo"><span class="tec">Tec</span><span class="blog">Blog</span></h1>
+        <h1 class="titulo"><span class="tec">Tec</span><span class="blog">Blog</span></h1> <!--Utilizei os spans para separar partes do título e conseguir estilizar elas-->
         <h4 class="subtitulo">O seu blog de tecnologia</h4>
-        <nav class="menu">
+        <nav class="menu"> <!--Menu de navegação com uma lista de links-->
             <ul>
                 <li><a href="" >Home</a></li>
                 <li><a href=""  >Jogos</a></li>
@@ -189,25 +189,25 @@
         </nav>
     </header> <!--Fim cabeçalho-->
 
-    <main class="container">
+    <main class="container"> <!--Container com as postagens-->
 
-        <section class="area-recentes">
+        <section class="area-recentes"> <!--Seção de posts recentes para dar destaque-->
             <h1 class="titulo-recentes">Postagens Recentes</h1>
 
-            <article class="post-recentes">
+            <article class="post-recentes"> <!--Post recente com o título, texto e link para ler mais-->
                 <h1 class="titulo-post">SSDs a partir de R$80 na Black das Black do Magazine Luiza</h1>
                 <p class="texto-recentes">Seja para uso interno ou externo, Magalu tem várias opções de SSDs em promoção, incluindo opções de marcas como Kingston, SanDisk, Adata e muitas outras a preços mais baixos por tempo limitado; confira as oportunidades</p>
                 <a href="" class="link-post">Leia mais</a>
             </article> 
-            <article class="post-recentes-ultimo">
+            <article class="post-recentes-ultimo"> <!--Há diferenciação de classe pois o último tem uma bordar superior para separar do acima dele, mas a estrutura é a mesma-->
                 <h1 class="titulo-post">Samsung confirma algumas das melhorias da linha Galaxy S26</h1>
                 <p class="texto-recentes">A fabricante sul-coreana Samsung revelou oficialmente alguns dos elementos que serão aprimorados na geração Galaxy S26 de smartphones. Quem apresentou uma prévia dos recursos foi Daniel Araujo, vice-presidente da Divisão de Experiência Móvel da companhia.</p>
                 <a href="" class="link-post">Leia mais</a>
             </article>
         </section>
 
-        <section class="area-post">
-            <article class="post">
+        <section class="area-post"> <!--Seção das postagens gerais do blog-->
+            <article class="post"> <!--Cada post consta um titulo, data, imagem, texto e link para ler mais-->
             
                 <h1 class="titulo-post">A história do Game Boy, a lendária linha de portáteis da Nintendo</h1>
                 <p class="data-post">postado 16 de novembro de 2025</p>
@@ -230,9 +230,9 @@
             </article>
         </section>       
 
-        <section class="area-comentarios">
+        <section class="area-comentarios"> <!--Seção de comentários-->
             <h2 class="titulo-post">Comentários</h2>
-            <table>
+            <table> <!--Tabela para armazenar os comentários já postados no blog-->
                 <tr>
                     <th class="usuario">Nome</th>
                     <th class="comentario">Comentário</th>
@@ -253,7 +253,7 @@
 
             <h4>Envie seu comentario</h3>
             <article class="enviar-comentario">
-                <form action="#">
+                <form action="#"> <!--Formulário dentro de uma tabela para que um usuário possa enviar seu comentário-->
                     <table>
                         <tr>
                             <td><label for="nome">Nome Completo</label></td>
@@ -274,9 +274,19 @@
         </section>
     </main>    
 
-    <footer id="rodape">
+    <footer id="rodape"> <!--Rodapé com autor e data-->
         <p>Todos os direitos reservados <br>Caio Eduardo, 2025</p>
     </footer>
    </body>
+<!--
+Criei essa página para reproduzir um blog com foco em informações sobre tecnologia, o blog tem notícias diversas sobre o mundo da tecnologia. Para sua criação, me inspirei em blogs que acesso quase que diariamente, mas trouxe uma identidade visual e elementos próprios. 
 
+Muitos blogs de tecnologia são vagos e outros muito técnicos, o TecnoBlog traz informações que vão desde valor de hardwares a assuntos relacionados a segurança da informação. 
+
+Tentei trazer uma identidade visual chamativa, mas harmônica unindo a cor amarela com tons de cinza e branco
+
+Criei uma página com o título, um menu de navegação, posts recentes, as postagens em geral e uma seção para comentários dos usuários, levando em consideração os elementos necessários para um blog, o TecnoBlog está completo.
+
+Não preenchi a largura completa para tentar uma identidade que puxe a visão do leitor para o centro da página seguindo um fluxo de leitura
+-->
 </html>

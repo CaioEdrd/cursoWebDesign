@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+
+    <style>
+    
+        .card { 
+                width: 300px; 
+                display: inline-block; 
+                background: white; 
+                border-radius: 8px; 
+                overflow: hidden; /* Corta a imagem nas bordas */ 
+                position: relative; /* Pai Âncora */ 
+            }
+
+        .card-img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover; /* Background-size para img tags */ 
+        }
+        .badge { 
+            position: absolute; 
+            top: 1rem; 
+            right: 0.3rem; 
+            background: #ef4444; 
+            color: white; 
+            padding: 0.25rem 0.5rem; 
+            font-size: 0.75rem; 
+            border-radius: 4px; }
+        
+        .card h1, p{
+            margin: 0
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Promoção 35% OFF</span>
+        <img class="card-img" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/83e8a50f81c044e69c9d3274af19fb2d_9366/Mochila_Classic_3_Bar_Logo_Preto_JI6953_01_00_standard.jpg" alt="Mochila"  >
+        <h1>Mochila adidas</h1>
+        <p>Aonde quer que o seu dia te leve, esta mochila adidas mantém você preparado</p>
+        
+    </div>
+</body>
+</html>
