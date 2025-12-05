@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05 - Caio Eduardo</title>
+
+    <style>
+        body{
+            background: #cdcdcd;
+        }
+        .perfil{
+            position: relative;
+            display: inline-block;
+            background: #ffff;
+            width: 500px;
+            padding: 20px;
+        }
+
+        .perfil-foto{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            display: inline-block;
+        }
+
+        .perfil-online{
+            position: absolute; 
+            height: 10px;
+            width: 3px;
+            bottom: 13%;
+            right: 71%; 
+            background: rgb(2, 226, 2); 
+            padding: 0.25rem 0.5rem; 
+            border-radius: 100%; 
+            display: inline-block;
+        }
+
+        .perfil-nome{
+            position: absolute;
+            left: 35%;
+            padding: 10px;
+            margin: 0;
+            bottom: 50%;
+        }
+
+        .perfil-bio{
+            position: absolute;
+            left: 35%;
+            padding: 10px;
+            margin: 0;
+            bottom: 40%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="perfil">
+        <img src="https://i0.wp.com/gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2013/05/14-fotos-perfil-2.jpg?w=640&ssl=1" alt="foto" class="perfil-foto">
+        <span class="perfil-online"></span>
+        <h1 class="perfil-nome">Caio Eduardo</h1>
+        <p class="perfil-bio">22 anos, Natal/RN</p>
+
+    </div>
+</body>
+</html>

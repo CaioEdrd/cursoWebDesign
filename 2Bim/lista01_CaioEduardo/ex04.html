@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 04 - Caio Eduardo</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .cards{
+            position: relative;
+            text-align: center;
+            width: 100%;
+            margin-top: 150px;
+        }
+
+        .card-basic,.card-pro,.card-enterprise{
+            border: 1px solid black;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+
+        .card-pro{
+            border: 2px solid red;
+        }
+
+        .titulo{
+            font-size: 1.2rem;
+        }
+
+        .subtitulo{
+            font-size: 0.8rem;
+        }
+
+        .valor{
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="cards">
+        <article class="card-basic">
+            <h1 class="titulo">Basic</h1>
+            <h3 class="subtitulo">O básico que funciona</h3>
+            <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quia.</p>
+            <p class="valor">R$ 150,00</p>
+        </article>
+
+        <article class="card-pro">
+            <h1 class="titulo">Pro</h1>
+            <h3 class="subtitulo">Assinatura para você que trabalha com nossa edição</h3>
+            <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quia.</p>
+            <p class="valor">R$ 250,00</p>
+        </article>
+
+        
+        <article class="card-enterprise">
+            <h1 class="titulo">Enterprise</h1>
+            <h3 class="subtitulo">Assinatura para você e sua equipe</h3>
+            <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quia.</p>
+            <p class="valor">R$ 400,00</p>
+        </article>
+    </section>
+
+</body>
+</html>
