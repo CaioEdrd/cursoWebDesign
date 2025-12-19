@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Eduardo - Lista 12 - Exercicio 08</title>
+    <style>
+        body{
+            margin: 0;
+            background: #cdcdcd;
+
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            height: 500px;
+            padding: 10px;
+
+        }
+        h1{
+            margin:0 0 5px 0;
+        }
+        h3{
+            margin: 0 0 10px 0;
+        }
+        p{
+            margin: 0 0 8px 0;
+        }
+        .card-basic, .card-enterprise{
+            height: 80%;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .card-pro{
+            height: 100%;
+            background: rgb(73, 117, 248);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <section class="cards">
+        <article class="card-basic">
+            <h1 class="titulo">Basic</h1>
+            <h3 class="subtitulo">O básico que funciona</h3>
+            <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quia.</p>
+            <p class="valor">R$ 150,00</p>
+        </article>
+
+        <article class="card-pro">
+            <h1 class="titulo">Pro</h1>
+            <h3 class="subtitulo">Assinatura para você que trabalha com nossa edição</h3>
+            <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quia.</p>
+            <p class="valor">R$ 250,00</p>
+        </article>
+
+        
+        <article class="card-enterprise">
+            <h1 class="titulo">Enterprise</h1>
+            <h3 class="subtitulo">Assinatura para você e sua equipe</h3>
+            <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quia.</p>
+            <p class="valor">R$ 400,00</p>
+        </article>
+    </section>
+
+</body>
+</html>

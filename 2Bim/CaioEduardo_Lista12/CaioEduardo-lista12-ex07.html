@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Eduardo - Lista 12 - Exercicio 07</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .main{
+            height: 100vh;
+            display: flex;
+        }
+
+        .imgLogin{
+            width: 50%;
+            background: rgb(73, 117, 248);
+        }
+
+        .login{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formLogin{
+            background: #cdcdcd;
+            padding: 100px 50px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formLogin label, input,button{
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .botao{
+            background: rgb(73, 117, 248);
+            border: none;
+            padding: 10px;
+            color:#fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="imgLogin"></div>
+        <div class="login">
+            <form action="#" class="formLogin">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
+                <button class="botao">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
