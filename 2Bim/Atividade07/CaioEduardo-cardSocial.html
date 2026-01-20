@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Eduardo - Atividade 07</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .area_perfil{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+        }
+        .perfil{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+        .informacao{
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            margin: 0;
+        }
+        .nome{
+            padding: 15px 0;
+        }
+        .area_principal{
+            display: flex;
+            flex-direction: column;
+        }
+        .foto_principal{
+            margin: 0 auto;
+
+        }
+        .interacao{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+
+        }
+        .comentario{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background: #cdcdcd;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="area_perfil">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9AxeZ4mkwcm7-1TH2-HggMRRnth8kGoeeQ&s" alt="perfil" class="perfil">
+        <div class="informacao">
+            <p class="nome">Nome</p>
+            <p class="biografia">Biografia</p>
+        </div>
+    </header>
+
+    <main class="area_principal">
+        <img src="https://img.freepik.com/fotos-gratis/paisagem-ensolarada-lago_1112-155.jpg" alt="foto_principal" class="foto_principal">
+
+        <div class="interacao">
+            <a href=""><img src="https://images.vexels.com/media/users/3/157338/isolated/preview/4952c5bde17896bea3e8c16524cd5485-icone-de-curtida-do-facebook.png" alt="like" width="30px" height="30px"></a>
+            <a href="#" class="comentario">Comentário</a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25702.png" alt="compartilhar" width="30px" height="30px"></a>
+        </div>
+        
+    </main>
+
+</body>
+</html>
