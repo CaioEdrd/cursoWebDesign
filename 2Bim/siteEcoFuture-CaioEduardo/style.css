@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     font-size: 16px;
+    background-color: var(--color-ligthBlue);
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
 }
 
 :root{
-    --color-white: #fff;
+    --color-white: #f8fafc;
     --color-black: #000;
-    --color-bgFeature: #cdcdcd;
+    --color-ligthBlue: #0ea5e9;
+    --color-darkBlue:#0f172a;
 }
 
 a{
@@ -15,22 +21,24 @@ a{
     color: var(--color-black);
 }
 
-h1{
+h1, p ,h4{
     margin: 0;
+    cursor: default;
 }
 
 #cabecalho{
  display: flex;
  align-items: center;
  justify-content:space-between;  
- border-bottom: var(--color-black) 1px solid; 
  height: 100px;
  margin-bottom: 10px;
+ background: var(--color-white);
 }
 
 .logo{
-    width: 200px;
+    width: 250px;
     min-width:180px ;
+    object-fit: cover;
 }
 
 .menu{
@@ -44,7 +52,9 @@ h1{
     display: flex;
     flex-direction: column;
 }
-
+.titulo{
+    margin-top: 10px;
+}
 #produto{
     display: flex;
     flex-direction: column;
@@ -55,21 +65,33 @@ h1{
 .img-produto{
     min-width: 300px;
     max-width: 750px;
+    border-radius: 10px;
+}
+
+.img-produto:hover{
+        transform: translate(0px) rotate(0.994983deg) skewX(0deg) skewY(0deg) scaleX(1) scaleY(1);
 }
 
 .botao-comprar{
-    padding: 10px;
+    padding: 20px 40px;
     border: 1px solid black;
     border-radius: 10px;
-    background: rgb(14, 148, 244);
+    background: var(--color-darkBlue);
     color: var(--color-white);
+    font-size: 20px;
 }
 
-.feature{
+.botao-comprar:hover{
+    background: var(--color-white);
+    color: var(--color-darkBlue);
+}
+
+.recursos{
     margin: 20px 0 20px 0;
     display: flex;
     gap:20px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .gelada24h, .conex-app, .termometro{
@@ -78,30 +100,128 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;  
-  background: var(--color-bgFeature);
+  background: var(--color-white);
   padding: 15px;
   border-radius: 10px;
 }
-.feature img{
+#feature img{
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.gelada24h:hover, .conex-app:hover, .termometro:hover{
+    transform: scale(1.07);
+}
+
+.compra{
+    display: flex;
+    justify-content: center ;
+}
+
+#formCompra{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+    width: 350px;
+    min-width: 300px;
+    margin-bottom: 10px;
+    background: var(--color-darkBlue);
+    color: var(--color-white);
+    border-radius: 10px;
+}
+
+#formCompra label, #formCompra input{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+    padding: 5px 0px;
+}
+
+#formCompra button{
+    padding: 10px 30px;
+    align-self: center;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.02rem;
+}
+
+#formCompra button:hover{
+    transform: scale(1.08);
+}
+
+.quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;   
+}
+
+.quantidade input{
+    width: 35px;
 }
 
 #rodape{
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    padding: 15px 10px;
+    background: var(--color-white);
 }
 
-#rodape li{
-    padding: 5px;
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 15px;
+    align-items: center;
 }
 
-.rodape-links{
+.endereco{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rodape-links ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+}
+
+.rodape-links li, .redes-sociais li{
+    padding: 5px 0;
+}
+
+.rodape-links h4, .redes-sociais h4{
+    padding: 0 0 10px 0;
 }
 
 .redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociais ul{
     list-style: none;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0;
+    padding: 0;
+}
+
+.redes-sociais img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.redes-sociais img:hover{
+    transform: scale(1.5);
 }
